@@ -8,10 +8,10 @@ import {
   SparklesIcon,
 } from '@heroicons/react/24/outline';
 
+import CoffeeIcon from '../components/Icon/CoffeeIcon';
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
 import letstwitt from '../images/portfolio/letstwitt.png';
@@ -53,7 +53,7 @@ export const SectionId = {
   Resume: 'resume',
   Skills: 'skills',
   Stats: 'stats',
-  // Testimonials: 'testimonials',
+  Testimonials: 'testimonials',
 } as const;
 
 export type SectionId = (typeof SectionId)[keyof typeof SectionId];
@@ -66,11 +66,11 @@ export const heroData: Hero = {
   name: `Hello, I'm Kader Gómez.`,
   description: (
     <>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg text-left">
         Civil Engineer and a <strong className="text-stone-100">Full Stack Developer.</strong> Creative and insatiable
-        learner, <br /> always looking for ways to improve.
+        learner, always looking for ways to improve.
       </p>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg text-left">
         In my free time, I love to be with my family, <strong className="text-stone-100">watch football</strong>,
         specially <strong className="text-stone-100">Real Madrid, </strong>and play with my dog{' '}
         <strong className="text-stone-100">Thunder. </strong>
@@ -209,10 +209,13 @@ export const education: TimelineItem[] = [
     location: 'University Marta Abreu from las Villas, Santa Clara, Cuba.',
     title: 'Automation Engineering',
     content: (
-      <p>
-        During this two years I made my first approach to programming in C and C++, this was the trigger that years
-        later made me came back to development.
-      </p>
+      <ul className="list-disc pl-5 text-left">
+        <li>
+          {' '}
+          During this two years I made my first approach to programming in C and C++, this was the trigger that years
+          later made me came back to development.
+        </li>
+      </ul>
     ),
   },
   {
@@ -220,35 +223,94 @@ export const education: TimelineItem[] = [
     location: 'University of Camaguey, Cuba.',
     title: 'Civil Engineering',
     content: (
-      <p>
-        On April 2021 participate in the 4th national workshop on quality and organization of works in construction. On
-        May 2021 I was speaker on the 1st International Meeting of Civil Engineering Students.
-      </p>
+      <ul className="list-disc pl-5 text-left">
+        <li>
+          On April 2021 participate in the 4th national workshop on quality and organization of works in construction.
+        </li>
+        <li>On May 2021 I was speaker on the 1st International Meeting of Civil Engineering Students.</li>
+      </ul>
     ),
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'May 2022 - Present',
+    location: 'Cute Digital Media, LLC. Remote',
+    title: 'Full Stack Developer',
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
+      <ul className="list-disc pl-5 text-left">
+        <li>
+          Actually I'm developing React and React Native Apps for Cute Digital Media LLC, essentially focused in{' '}
+          <a className="font-bold" href="http://pronyr.com/">
+            Pronyr TV
+          </a>{' '}
+          Project.
+        </li>
+        <li>I work daily with Git, Jira, Desktime among other platforms for developers.</li>
+        <li>Also perform quality checks and tests for applications.</li>
+      </ul>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'June 2020 - May 2022',
+    location: "D'McPherson Group. Remote",
+    title: 'Team Leader - Software Engineer',
     content: (
-      <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
-      </p>
+      <ul className="list-disc pl-5 text-left">
+        <li>I build and established strong partnerships with teams, vendors, and contractors.</li>
+        <li>
+          I created and maintain the software to handled the database for DMcPherson Publishing House{' '}
+          <span className="font-bold">MECS</span>.
+        </li>
+        <li>I Designed and developed the mobile application in React Native for DMcPherson Publishing House.</li>
+        <li>
+          I was in charge of the QA Testing and server maintenance for various projects and clients, among them:{' '}
+          <ul className="list-disc pl-5 text-left">
+            <li>
+              <a className="underline" href="https://www.dmcphersoneditorial.com">
+                D'McPherson Editorial
+              </a>
+            </li>
+            <li>
+              <a className="underline" href="https://www.dmcphersoneditorial.com">
+                Web de autores D'McPherson Editorial
+              </a>
+            </li>
+            <li>
+              <a className="underline" href="https://www.grupomcpherson.com">
+                Deco McPherson Web
+              </a>
+            </li>
+            <li>
+              <a className="underline" href="https://laperegrinarestaurante.com/">
+                La Peregrina Restaurante
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>Conduct the full lifecycle software development from development to production.</li>
+        <li>Modify company web applications and processes to increase productivity.</li>
+      </ul>
+    ),
+  },
+  {
+    date: 'March 2014 - December 2020',
+    location: 'Own Cell Workshop in Camaguey, Cuba',
+    title: 'Cell Phone Repair Technician',
+    content: (
+      <ul className="list-disc pl-5 text-left">
+        <li>Checked cell phones for signs of fraud and compatibility with refurbishment.</li>
+        <li>Performed complete phone erasures and factory resets, debugged problems and refurbished devices.</li>
+        <li>
+          Tested repaired, newly installed or updated equipment to ensure proper function and conformance to
+          specifications.
+        </li>
+        <li>Installed, set up and repaired devices and system components.</li>
+        <li>Developed MC-U Tool to repair, unlock and reinstall hundreds of Android devices.</li>
+        <li>Provided excellent service and attention to the customers.</li>
+        <li>I owned 3 cell phone workshops in different areas of the city.</li>
+      </ul>
     ),
   },
 ];
@@ -282,28 +344,34 @@ export const testimonial: TestimonialSection = {
  */
 
 export const contact: ContactSection = {
-  headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  headerText: 'Feel free to get in touch with me!',
+  description:
+    "If you have questions, feedback, or just want to connect, don't hesitate to reach out. I'm always eager to engage with fellow developers, whether it's about programming, tech news, or even if you just want to chat about our shared interest in massages.",
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'redakdev@gmail.com',
+      href: 'mailto:redakdev@gmail.com',
     },
     {
-      type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
-    },
-    {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      type: ContactType.Twitter,
+      text: '@KaderGomezDev',
+      href: 'https://twitter.com/KaderGomezDev',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'Personal projects',
+      href: 'https://github.com/kader1303',
+    },
+    {
+      type: ContactType.Github,
+      text: 'Jobs',
+      href: 'https://github.com/Redak0313',
+    },
+    {
+      type: ContactType.LinkedIn,
+      text: 'kadergomezdev',
+      href: 'https://www.linkedin.com/in/kadergomezdev',
     },
   ],
 };
@@ -312,9 +380,9 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/Redak0313'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/kadergomezdev/'},
+  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/kadergomezdev/'},
+  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/KaderGomezDev'},
+  {label: 'Buy me a coffee', Icon: CoffeeIcon, href: 'https://paylink.kadergomez.dev/'},
 ];
