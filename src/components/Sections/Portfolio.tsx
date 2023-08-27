@@ -47,7 +47,8 @@ const Portfolio: FC = memo(() => {
                 </div>
               );
             }}
-            showStatus={false}>
+            showStatus={false}
+            showThumbs={false}>
             {portfolioItems.map((item, index) => {
               const {title, image} = item;
               return (

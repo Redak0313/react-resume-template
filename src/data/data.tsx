@@ -79,7 +79,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
+      href: 'https://firebasestorage.googleapis.com/v0/b/kader-gomez-dev.appspot.com/o/Curriculum%20Kader.pdf?alt=media&token=78654579-4a6f-42f8-a7a1-f31a8a59abaf',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
@@ -137,7 +137,7 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `I'm 31 years old and I'm currently working as a software developer at Cute Digital Media. Additionally, I undertake some personal projects that help me learn and stay motivated every day. In the field of software development, I enjoy both backend and frontend work and have often had to handle both parts of the solution. While I'm currently focused on JavaScript, TypeScript, and React, I have experience with various languages and frameworks like C#, Autoit, Angular, Astro and others. In my personal life, I enjoy watching sports, especially futbol, and spending time with my family.`,
+  description: `I'm 31 years old and currently working as a software developer at Cute Digital Media. Additionally, I undertake some personal projects that help me learn and stay motivated every day. In the field of software development, I enjoy both backend and frontend work and have often had to handle both parts of the solution. While I'm currently focused on JavaScript, TypeScript, and React, I have experience with various languages and frameworks like C#, Autoit, Angular, Astro and others. In my personal life, I enjoy watching sports, especially futbol, and spending time with my family.`,
   aboutItems: [
     {label: 'Location', text: 'World Earth', Icon: MapIcon},
     {label: 'Age', text: '31', Icon: CalendarIcon},
@@ -243,7 +243,7 @@ export const skills: SkillGroup[] = [
     ],
   },
   {
-    name: 'Soft skills',
+    name: 'Other skills',
     skills: [
       {
         name: 'Git',
@@ -410,7 +410,7 @@ export const experience: TimelineItem[] = [
           </ul>
         </li>
         <li>Conduct the full lifecycle software development from development to production.</li>
-        <li>Modify company web applications and processes to increase productivity.</li>
+        <li>Modify company web applications and processes to increase productivity and performance.</li>
       </ul>
     ),
   },
@@ -477,11 +477,6 @@ export const contact: ContactSection = {
       type: ContactType.Twitter,
       text: '@KaderGomezDev',
       href: 'https://twitter.com/KaderGomezDev',
-    },
-    {
-      type: ContactType.Github,
-      text: 'Personal projects',
-      href: 'https://github.com/kader1303',
     },
     {
       type: ContactType.Github,
