@@ -13,13 +13,13 @@ import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
-import heroImage from '../images/header-background.webp';
+import heroImage from '../images/headerBackground.png';
+import amanyar from '../images/portfolio/amanyar.png';
 import letstwitt from '../images/portfolio/letstwitt.png';
 import mcpherson from '../images/portfolio/mcpherson.png';
 import mcu from '../images/portfolio/mcu.png';
 import mecs from '../images/portfolio/mecs.png';
-import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
-import profilepic from '../images/profilepic.jpg';
+import profilepic from '../images/profilepic.png';
 import testimonialImage from '../images/testimonial.webp';
 import {
   About,
@@ -104,17 +104,18 @@ export const portfolioItems: PortfolioItem[] = [
     image: mcpherson,
   },
   {
+    title: 'A Manyar',
+    description:
+      'In development, Nutritional Coach for healthy eating and living, based on Open AI Api to generate recipes and diet plans.',
+    url: 'https://a-manyar.com',
+    image: amanyar,
+  },
+  {
     title: 'MECS',
     description:
       "D'McPherson Editorial Control Software is made in C# and manage all the data from the stakeholders, control the sales and more.",
     url: 'https://1drv.ms/v/s!AoScFW6xlNY3sZwXoMe2xtMxLHO4Tw?e=gf7VM6',
     image: mecs,
-  },
-  {
-    title: "Let's Twitt",
-    description: 'Chrome extension made with React + Typescript to generate tweets and alerts using the Open Ai API.',
-    url: 'https://github.com/kader1303/Lets-Twitt-Ts',
-    image: letstwitt,
   },
   {
     title: 'MC-U tool',
@@ -124,11 +125,10 @@ export const portfolioItems: PortfolioItem[] = [
     image: mcu,
   },
   {
-    title: 'A Manyar',
-    description:
-      'In development, Nutritional Coach for healthy eating and living, based on Open AI Api to generate recipes and diet plans.',
-    url: 'https://a-manyar.com',
-    image: porfolioImage5,
+    title: "Let's Twitt",
+    description: 'Chrome extension made with React + Typescript to generate tweets and alerts using the Open Ai API.',
+    url: 'https://github.com/kader1303/Lets-Twitt-Ts',
+    image: letstwitt,
   },
 ];
 
@@ -137,9 +137,7 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `I'm 31 years old and I'm currently working as a software developer at Cute Digital Media. Additionally, I undertake some personal projects that help me learn and stay motivated every day. In the field of software development, I enjoy both backend and frontend work and have often had to handle both parts of the solution. While I'm currently focused on JavaScript, TypeScript, and React, I have experience with various languages and frameworks like C#, Autoit, Angular, Astro and others. In my personal life, I enjoy watching sports, especially futbol, and spending time with my family.`,
   aboutItems: [
     {label: 'Location', text: 'World Earth', Icon: MapIcon},
     {label: 'Age', text: '31', Icon: CalendarIcon},
@@ -168,15 +166,19 @@ export const skills: SkillGroup[] = [
     ],
   },
   {
-    name: 'Frontend development',
+    name: 'Web Frontend development',
     skills: [
       {
         name: 'React',
-        level: 8,
+        level: 7,
       },
       {
         name: 'Typescript',
-        level: 7,
+        level: 8,
+      },
+      {
+        name: 'Wordpress',
+        level: 6,
       },
     ],
   },
@@ -187,6 +189,14 @@ export const skills: SkillGroup[] = [
         name: 'Node.js',
         level: 6,
       },
+      {
+        name: 'Javascript',
+        level: 6,
+      },
+      {
+        name: 'MySql',
+        level: 7,
+      },
     ],
   },
   {
@@ -195,6 +205,57 @@ export const skills: SkillGroup[] = [
       {
         name: 'React Native',
         level: 9,
+      },
+      {
+        name: 'Flutter',
+        level: 6,
+      },
+    ],
+  },
+  {
+    name: 'Windows development',
+    skills: [
+      {
+        name: 'C#',
+        level: 6,
+      },
+      {
+        name: 'Autoit',
+        level: 8,
+      },
+    ],
+  },
+  {
+    name: 'Cloud computing',
+    skills: [
+      {
+        name: 'AWS',
+        level: 8,
+      },
+      {
+        name: 'Linux VPS',
+        level: 8,
+      },
+      {
+        name: 'Firebase',
+        level: 7,
+      },
+    ],
+  },
+  {
+    name: 'Soft skills',
+    skills: [
+      {
+        name: 'Git',
+        level: 8,
+      },
+      {
+        name: 'Canva',
+        level: 8,
+      },
+      {
+        name: 'Scrum',
+        level: 6,
       },
     ],
   },
@@ -233,6 +294,65 @@ export const education: TimelineItem[] = [
   },
 ];
 
+export const certificates: TimelineItem[] = [
+  {
+    date: 'January 2023',
+    location: 'Google Actívate - On Line.',
+    title: 'Protect Your Business: Cybersecurity in Teleworking',
+    href: 'https://learndigital.withgoogle.com/activate/validate-certificate-code',
+    credential: 'MPG WS6 8JK',
+  },
+  {
+    date: 'January 2023',
+    location: 'Google Actívate - On Line',
+    title: 'Cloud Computing.',
+    href: 'https://learndigital.withgoogle.com/activate/validate-certificate-code',
+    credential: 'DET 96H 9BG',
+  },
+  {
+    date: 'June 2022',
+    location: 'Platzi - On Line.',
+    title: 'Practical JavaScript Course',
+    href: 'https://platzi.com/p/kdryere1314286/curso/2327-javascript-practico-2021/diploma/detalle/',
+  },
+  {
+    date: 'June 2022',
+    location: 'Platzi - On Line.',
+    title: 'Frontend Developer Course',
+    href: 'https://platzi.com/p/kdryere1314286/curso/2467-frontend-developer/diploma/detalle/',
+  },
+  {
+    date: 'May 2022',
+    location: 'Platzi - On Line',
+    title: 'TypeScript 3.',
+    href: 'https://platzi.com/p/kdryere1314286/curso/1869-typescript-2020/diploma/detalle/',
+  },
+  {
+    date: 'January 2022',
+    location: 'Platzi - On Line',
+    title: 'Business Leadership Course.',
+    href: 'https://platzi.com/p/kdryere1314286/curso/1446-liderazgo-empresarial/diploma/detalle/',
+  },
+  {
+    date: 'January 2022',
+    location: 'Platzi - On Line',
+    title: 'Course to Create Positive Habits.',
+    href: 'https://platzi.com/p/kdryere1314286/curso/2356-creacion-habitos/diploma/detalle/',
+  },
+  {
+    date: 'December 2021',
+    location: 'Platzi - On Line',
+    title: 'Basic JavaScript Course.',
+    href: 'https://platzi.com/p/kdryere1314286/curso/1814-basico-javascript/diploma/detalle/',
+  },
+  {
+    date: 'November 2021',
+    location: 'Platzi - On Line',
+    title: 'Effective Time Management.',
+    href: 'https://platzi.com/p/kdryere1314286/curso/1749-gestion-tiempo/diploma/detalle/',
+  },
+];
+
 export const experience: TimelineItem[] = [
   {
     date: 'May 2022 - Present',
@@ -242,7 +362,7 @@ export const experience: TimelineItem[] = [
       <ul className="list-disc pl-5 text-left">
         <li>
           Actually I'm developing React and React Native Apps for Cute Digital Media LLC, essentially focused in{' '}
-          <a className="font-bold" href="http://pronyr.com/">
+          <a className="font-bold" href="http://pronyr.com/" rel="noopener" target="_blank">
             Pronyr TV
           </a>{' '}
           Project.
@@ -268,22 +388,22 @@ export const experience: TimelineItem[] = [
           I was in charge of the QA Testing and server maintenance for various projects and clients, among them:{' '}
           <ul className="list-disc pl-5 text-left">
             <li>
-              <a className="underline" href="https://www.dmcphersoneditorial.com">
+              <a className="underline" href="https://www.dmcphersoneditorial.com" rel="noopener" target="_blank">
                 D'McPherson Editorial
               </a>
             </li>
             <li>
-              <a className="underline" href="https://www.dmcphersoneditorial.com">
+              <a className="underline" href="https://www.dmcphersoneditorial.com" rel="noopener" target="_blank">
                 Web de autores D'McPherson Editorial
               </a>
             </li>
             <li>
-              <a className="underline" href="https://www.grupomcpherson.com">
+              <a className="underline" href="https://www.grupomcpherson.com" rel="noopener" target="_blank">
                 Deco McPherson Web
               </a>
             </li>
             <li>
-              <a className="underline" href="https://laperegrinarestaurante.com/">
+              <a className="underline" href="https://laperegrinarestaurante.com/" rel="noopener" target="_blank">
                 La Peregrina Restaurante
               </a>
             </li>
@@ -365,7 +485,7 @@ export const contact: ContactSection = {
     },
     {
       type: ContactType.Github,
-      text: 'Jobs',
+      text: 'Job',
       href: 'https://github.com/Redak0313',
     },
     {

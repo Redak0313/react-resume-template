@@ -1,6 +1,6 @@
 {
-  "name": "react-resume-template",
-  "short_name": "react-resume-template",
+  "name": "kader_gomez_dev_portfolio",
+  "short_name": "my_portfolio",
   "icons": [
     {"src": "/icon-192.png", "type": "image/png", "sizes": "192x192"},
     {"src": "/icon-512.png", "type": "image/png", "sizes": "512x512"}

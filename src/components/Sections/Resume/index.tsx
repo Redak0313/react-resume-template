@@ -1,7 +1,8 @@
 import {FC, memo} from 'react';
 
-import {education, experience, SectionId, skills} from '../../../data/data';
+import {certificates, education, experience, SectionId, skills} from '../../../data/data';
 import Section from '../../Layout/Section';
+import CertificatesList from './CertificatesList';
 import ResumeSection from './ResumeSection';
 import {SkillGroup} from './Skills';
 import TimelineItem from './TimelineItem';
@@ -20,9 +21,14 @@ const Resume: FC = memo(() => {
             <TimelineItem item={item} key={`${item.title}-${index}`} />
           ))}
         </ResumeSection>
+        <ResumeSection title="Certificates">
+          {certificates.map((item, index) => (
+            <CertificatesList item={item} key={`${item.title}-${index}`} />
+          ))}
+        </ResumeSection>
         <ResumeSection title="Skills">
           <p className="pb-8 text-left">
-            This are some of my skills levels, however I am always looking to learn new technologies and improve.
+            This are some of my skills, however I'm always looking to learn new technologies and improve.
           </p>
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
             {skills.map((skillgroup, index) => (
