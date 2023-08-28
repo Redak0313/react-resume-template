@@ -40,5 +40,7 @@ yarn-error.log*
 .vscode/*
 
 # config
-
 .config/*
+
+# github workflow
+github-workflow.yml
