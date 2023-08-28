@@ -79,7 +79,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: 'https://firebasestorage.googleapis.com/v0/b/kader-gomez-dev.appspot.com/o/Curriculum%20Kader.pdf?alt=media&token=78654579-4a6f-42f8-a7a1-f31a8a59abaf',
+      href: 'https://firebasestorage.googleapis.com/v0/b/kader-gomez-dev.appspot.com/o/Curriculum%20Kader.pdf?alt=media&token=71374438-61f4-4972-9b9f-4ae9712a58bd',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
