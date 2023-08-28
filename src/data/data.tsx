@@ -79,7 +79,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: 'https://firebasestorage.googleapis.com/v0/b/kader-gomez-dev.appspot.com/o/Curriculum%20Kader.pdf?alt=media&token=71374438-61f4-4972-9b9f-4ae9712a58bd',
+      href: 'https://firebasestorage.googleapis.com/v0/b/kader-gomez-dev.appspot.com/o/Curriculum%20Kader.pdf?alt=media&token=50b7ff7d-12bc-4bdb-84bc-c531e0554d51',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
@@ -106,7 +106,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: 'A Manyar',
     description:
-      'In development, Nutritional Coach for healthy eating and living, based on Open AI Api to generate recipes and diet plans.',
+      'IN DEVELOPMENT. Nutritional Coach for healthy eating and living, based on Open AI Api to generate recipes and diet plans.',
     url: 'https://a-manyar.com',
     image: amanyar,
   },
