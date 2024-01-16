@@ -17,7 +17,7 @@ const Portfolio: FC = memo(() => {
   return (
     <Section className="bg-neutral-800" sectionId={SectionId.Portfolio}>
       <div className="flex flex-col gap-y-8">
-        <h2 className="self-center text-xl sm:text-2xl md:text-2xl  font-bold text-white">My latest projects</h2>
+        <h2 className="self-center text-xl sm:text-2xl md:text-2xl  font-bold text-white">Some personal projects</h2>
         <div className="w-ful sm:h-1/3 md:h-1/3 flex justify-center items-center">
           <Carousel
             autoPlay={true}

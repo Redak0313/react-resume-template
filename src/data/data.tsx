@@ -121,13 +121,13 @@ export const portfolioItems: PortfolioItem[] = [
     title: 'MC-U tool',
     description:
       'Software for repairing and restoring many android mobile devices, unlock network, repair IMEI, baseband, FRP and much more functions where implemented.',
-    url: 'https://github.com/kader1303/mcu-tool-script',
+    url: 'https://github.com/Redak0313/mcu-tool-script',
     image: mcu,
   },
   {
     title: "Let's Twitt",
     description: 'Chrome extension made with React + Typescript to generate tweets and alerts using the Open Ai API.',
-    url: 'https://github.com/kader1303/Lets-Twitt-Ts',
+    url: 'https://github.com/Redak0313/Lets-Twitt-Ts',
     image: letstwitt,
   },
 ];
@@ -161,7 +161,7 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'English',
-        level: 6,
+        level: 8,
       },
     ],
   },
@@ -170,14 +170,14 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'React',
-        level: 7,
+        level: 9,
       },
       {
         name: 'Typescript',
-        level: 8,
+        level: 9,
       },
       {
-        name: 'Wordpress',
+        name: 'WordPress',
         level: 6,
       },
     ],
@@ -187,11 +187,11 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'Node.js',
-        level: 6,
+        level: 7,
       },
       {
         name: 'Javascript',
-        level: 6,
+        level: 8,
       },
       {
         name: 'MySql',
@@ -247,7 +247,7 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'Git',
-        level: 8,
+        level: 9,
       },
       {
         name: 'Canva',
@@ -255,7 +255,7 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'Scrum',
-        level: 6,
+        level: 8,
       },
     ],
   },
@@ -480,7 +480,7 @@ export const contact: ContactSection = {
     },
     {
       type: ContactType.Github,
-      text: 'Job',
+      text: '@Redak0313',
       href: 'https://github.com/Redak0313',
     },
     {
