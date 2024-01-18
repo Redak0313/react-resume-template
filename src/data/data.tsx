@@ -67,7 +67,7 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg text-left">
-        Civil Engineer and a <strong className="text-stone-100">Full Stack Developer.</strong> Creative and insatiable
+        Full Stack Developer and a <strong className="text-stone-100">Civil Engineer.</strong> Creative and insatiable
         learner, always looking for ways to improve.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg text-left">
@@ -137,7 +137,7 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `I'm 31 years old and currently working as a software developer at Cute Digital Media. Additionally, I undertake some personal projects that help me learn and stay motivated every day. In the field of software development, I enjoy both backend and frontend work and have often had to handle both parts of the solution. While I'm currently focused on JavaScript, TypeScript, and React, I have experience with various languages and frameworks like C#, Autoit, Angular, Astro and others. In my personal life, I enjoy watching sports, especially futbol, and spending time with my family.`,
+  description: `I'm 31 years old and currently working as a software developer at Cute Digital Media and PRONYR TV. Additionally, I undertake some personal projects that help me learn and stay motivated every day. In the field of software development, I enjoy both backend and frontend work and have often had to handle both parts of the solution. While I'm currently focused on JavaScript, TypeScript, and React, I have experience with various languages and frameworks like C#, Autoit, Angular, Astro and others. In my personal life, I enjoy watching sports, especially futbol, and spending time with my family.`,
   aboutItems: [
     {label: 'Location', text: 'World Earth', Icon: MapIcon},
     {label: 'Age', text: '31', Icon: CalendarIcon},
@@ -187,7 +187,7 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'Node.js',
-        level: 7,
+        level: 8,
       },
       {
         name: 'Javascript',
@@ -238,7 +238,7 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'Firebase',
-        level: 7,
+        level: 9,
       },
     ],
   },
@@ -295,6 +295,60 @@ export const education: TimelineItem[] = [
 ];
 
 export const certificates: TimelineItem[] = [
+  {
+    date: 'April 2023',
+    location: 'Platzi - On Line.',
+    title: 'Frameworks and Javascript Libraries.',
+    href: 'https://platzi.com/p/kdryere1314286/curso/2239-frameworks-javascript/diploma/detalle/',
+  },
+  {
+    date: 'April 2023',
+    location: 'Platzi - On Line.',
+    title: 'Introduction to AWS - Storage and Databases.',
+    href: 'https://platzi.com/p/kdryere1314286/curso/2732-aws-computo/diploma/detalle/',
+  },
+  {
+    date: 'April 2023',
+    location: 'Platzi - On Line.',
+    title: 'Introduction to AWS - Networks and Machine Learning.',
+    href: 'https://platzi.com/p/kdryere1314286/curso/2733-aws-redes/diploma/detalle/',
+  },
+  {
+    date: 'April 2023',
+    location: 'Platzi - On Line.',
+    title: 'NPM Course - Package managements and Javascript dependencies.',
+    href: 'https://platzi.com/p/kdryere1314286/curso/3578-npm/diploma/detalle/',
+  },
+  {
+    date: 'March 2023',
+    location: 'Platzi - On Line.',
+    title: 'Practical Course - Frontend Developer.',
+    href: 'https://platzi.com/p/kdryere1314286/curso/2477-frontend-developer-practico/diploma/detalle/',
+  },
+  {
+    date: 'March 2023',
+    location: 'Platzi - On Line.',
+    title: 'Practical React Native - Forms, Storage and Deploy.',
+    href: 'https://platzi.com/p/kdryere1314286/curso/2558-react-native-formularios-almacenamiento/diploma/detalle/',
+  },
+  {
+    date: 'March 2023',
+    location: 'Platzi - On Line.',
+    title: 'Practical React Native - List managements and APIs.',
+    href: 'https://platzi.com/p/kdryere1314286/curso/2557-react-native-listas-apis/diploma/detalle/',
+  },
+  {
+    date: 'March 2023',
+    location: 'Platzi - On Line.',
+    title: 'Introduction to AWS: Cloud Computing Basis.',
+    href: 'https://platzi.com/p/kdryere1314286/curso/2731-aws-fundamentos/diploma/detalle/',
+  },
+  {
+    date: 'March 2023',
+    location: 'Platzi - On Line.',
+    title: 'Introduction to React Native.',
+    href: 'https://platzi.com/p/kdryere1314286/curso/2556-react-native/diploma/detalle/',
+  },
   {
     date: 'January 2023',
     location: 'Google Actívate - On Line.',
@@ -362,7 +416,7 @@ export const experience: TimelineItem[] = [
       <ul className="list-disc pl-5 text-left">
         <li>
           Actually I'm developing React and React Native Apps for Cute Digital Media LLC, essentially focused in{' '}
-          <a className="font-bold" href="http://pronyr.com/" rel="noopener" target="_blank">
+          <a className="font-bold underline" href="http://pronyr.com/" rel="noopener" target="_blank">
             Pronyr TV
           </a>{' '}
           Project.
